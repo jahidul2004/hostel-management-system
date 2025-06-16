@@ -1,3 +1,3 @@
-gxgxhcghjbghhgdhdhdtdtdhdvvyuvgbc।g# Welcome to Hostel Management System
+# Welcome to Hostel Management System
 
 ### This project is under development..
