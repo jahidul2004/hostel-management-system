@@ -1,18 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GreenView Hostel</title>
         <link
             href="https://cdn.jsdelivr.net/npm/daisyui@5"
             rel="stylesheet"
             type="text/css"
         />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Hostel management system</title>
+        <style>
+            .fade-in {
+                animation: fadeIn 1s ease-out forwards;
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
     </head>
-    <body>
-        <h1 class="text-xl">Hello Dhaka</h1>
-        <button class="btn btn-soft btn-success">Hello Button</button>
+    <body class="bg-base-100 text-base-content">
+        <!-- NAVBAR -->
+        <div class="navbar bg-white shadow-md px-6 sticky top-0 z-50">
+            <div class="flex-1">
+                <a class="text-2xl font-bold text-green-600"
+                    >🏡 GreenView Hostel</a
+                >
+            </div>
+            <div class="flex-none gap-3">
+                <a class="btn btn-ghost">Home</a>
+                <a class="btn btn-ghost">Rooms</a>
+                <a class="btn btn-ghost">Facilities</a>
+                <a class="btn btn-ghost">Contact</a>
+                <button class="btn btn-success">Login</button>
+            </div>
+        </div>
+
+        <!-- HERO SECTION -->
+        <section
+            class="hero min-h-[80vh] bg-[url('https://i.ibb.co/GzQhzmV/photo-1623625434462-e5e42318ae49.jpg')] bg-cover bg-center fade-in"
+        >
+            <div class="hero-overlay bg-[#00000077]"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-2xl">
+                    <h1 class="mb-5 text-5xl font-bold text-white">
+                        Welcome to GreenView Hostel
+                    </h1>
+                    <p class="mb-6 text-lg text-gray-200">
+                        A safe, secure, and serene environment for students and
+                        professionals.
+                    </p>
+                    <button class="btn btn-accent btn-lg">
+                        Apply for Room
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="py-16 px-6 max-w-5xl mx-auto text-center fade-in">
+            <h2 class="text-3xl font-bold text-green-700 mb-4">
+                Why Choose Us?
+            </h2>
+            <p class="text-gray-600 text-lg">
+                GreenView Hostel offers a perfect blend of comfort, safety, and
+                affordability. Located in the heart of the city with 24/7
+                support, hygienic food, and peaceful living.
+            </p>
+        </section>
+
+        <!-- FACILITIES SECTION -->
+        <section class="py-10 px-6 bg-green-50 fade-in">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-10 text-green-800">
+                    Facilities
+                </h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div
+                        class="card bg-white shadow-xl p-6 hover:shadow-2xl transition"
+                    >
+                        <h3 class="text-xl font-bold text-green-600 mb-2">
+                            🛏️ Fully Furnished Rooms
+                        </h3>
+                        <p class="text-gray-600">
+                            Airy, clean rooms with beds, tables, and wardrobes.
+                        </p>
+                    </div>
+                    <div
+                        class="card bg-white shadow-xl p-6 hover:shadow-2xl transition"
+                    >
+                        <h3 class="text-xl font-bold text-green-600 mb-2">
+                            🍛 Healthy Meals
+                        </h3>
+                        <p class="text-gray-600">
+                            Nutritious meals three times a day with veg/non-veg
+                            options.
+                        </p>
+                    </div>
+                    <div
+                        class="card bg-white shadow-xl p-6 hover:shadow-2xl transition"
+                    >
+                        <h3 class="text-xl font-bold text-green-600 mb-2">
+                            📶 Free Wi-Fi
+                        </h3>
+                        <p class="text-gray-600">
+                            High-speed internet access in all rooms and common
+                            areas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="py-16 px-6 fade-in">
+            <h2 class="text-3xl font-bold text-center mb-10 text-green-800">
+                What Our Residents Say
+            </h2>
+            <div class="carousel rounded-box space-x-6 max-w-4xl mx-auto">
+                <div
+                    class="carousel-item w-full md:w-1/2 bg-white p-6 rounded-lg shadow-md"
+                >
+                    <p class="text-gray-600">
+                        "GreenView is the best hostel I've ever stayed in. It's
+                        peaceful and feels like home."
+                    </p>
+                    <h4 class="font-bold mt-3 text-green-700">
+                        — Sarah, Medical Student
+                    </h4>
+                </div>
+                <div
+                    class="carousel-item w-full md:w-1/2 bg-white p-6 rounded-lg shadow-md"
+                >
+                    <p class="text-gray-600">
+                        "Affordable and super clean. Management is very helpful
+                        too."
+                    </p>
+                    <h4 class="font-bold mt-3 text-green-700">
+                        — Tanvir, Job Seeker
+                    </h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section
+            class="py-20 text-center bg-gradient-to-r from-green-100 to-white fade-in"
+        >
+            <h2 class="text-4xl font-bold mb-4 text-green-800">
+                Ready to Move In?
+            </h2>
+            <p class="mb-6 text-gray-600">
+                Rooms are limited. Apply now to reserve your seat at GreenView
+                Hostel.
+            </p>
+            <button class="btn btn-success btn-lg">Apply Now</button>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer footer-center p-10 bg-base-200 text-base-content">
+            <nav class="grid grid-flow-col gap-4">
+                <a class="link link-hover">Privacy</a>
+                <a class="link link-hover">Support</a>
+                <a class="link link-hover">Terms</a>
+            </nav>
+            <p class="text-sm text-gray-500">
+                © 2025 GreenView Hostel. All rights reserved.
+            </p>
+        </footer>
     </body>
 </html>
