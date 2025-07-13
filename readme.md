@@ -1,3 +1,1 @@
-# Welcome to Hostel Management System
-
-### This project is under development....।
+# Visit project github page for output...
